@@ -20,7 +20,9 @@ export default {
   },
   methods: {
       changeTitle() {
-          this.$emit('changeTitle', 'Vue Wizards');
+          //this.$emit('changeTitle', 'Vue Wizards');
+          this.title = 'Vue Wizards';
+          bus.$emit('titleChanged', 'Vue Wizards'); //Event calling through bus
       }
   }
 }

@@ -17,6 +17,11 @@ export default {
     return {
         copyright: 'Copyright 2018'
     }
+  },
+  created() {
+      bus.$on('titleChanged', (data) => {
+          this.title = data;
+      })
   }
 }
 </script>
