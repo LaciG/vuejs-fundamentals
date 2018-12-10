@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <mets charset="utf-8">
+      <title>VueJS Tutorials</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="vue-app-one">
+      <!-- Multiple Vue Instances -->
+        <h2>{{title}}</h2>
+        <p> {{greet}} </p>
+    </div>
+
+    <div id="vue-app-two">
+      <h2>{{title}}</h2>
+      <p> {{greet}} </p>
+      <button v-on:click="changeTitle">Change App  One Title</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
